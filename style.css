@@ -1,104 +1,76 @@
-html {
-    display: grid;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@font-face {
+	font-family: BrandonText;
+	src: url(fonts/BrandonText.otf);
 }
-body {
-    text-align: center;
+@font-face {
+	font-family: Cocogoose;
+	src: url(fonts/Cocogoose.ttf);
 }
-
-h1 {
-    font-size: 5em;
+.value,.column,html,h1,.axis_name {
+	font-family: Cocogoose!important;
+	color: #000000;
 }
-
-h2 {
-    font-size: 2em;
+p,.button,.small_button, .small_button_off,p.question,h2,div.text-wrapper {
+	font-family: BrandonText ;
 }
-
-p {
-    font-size: 1.5em;
+div.bar {
+	border-color: #000000;
+        border-width: 8px;
+	border-right-width: 0.5px;
 }
-
-ul {
-    font-size: 1.5em;
+.button,.small_button,.small_button_off {
+	border: 8px solid #000000;
+	border-radius: 8pt;
 }
-
-#question {
-    text-align: center;
-    font-size: 2em;
-    background-color: beige;
-    width: 40%;
-    min-width: 100px;
-    padding: 1em;
-    margin: 1em auto;
-    border-radius: 20px;
+p.question {
+	border: 8px solid #000000;
+	color: #000000;
 }
-
-button{
-    display: block;
-    text-align: center;
-    font-size: 1.5em;
-    padding: 0.4em;
-    width: 20%;
-    margin: 0.4em auto;
-    background-color:dodgerblue;
-    border-radius: 1em;
-    border-style: none;
+.column {
+	max-width: 9.7rem;
+}
+.small_button:hover,.small_button:focus {
+	background: #000000;
+}
+.question,p.axis_name,.text-wrapper,.axis_name,h2 {
+	color: #000000;
+}
+.blurb-text,p {
+	color: #222222;
 }
 
-#results {
-    margin: 0 auto;
-    border-radius: 20px;
-    max-width: 80%;
-    height: auto;
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #141414;
+		border-color: #000000;
+	}
+	html {
+		background-color: #505050;
+	}
+	h1,h2,p.axis_name,div.axis_name {
+		color: #ffffff;
+	}
+	p,.question,.blurb-text {
+		color: #c0c0c0;
+	}
+	.button,.small_button, .small_button_off {
+		border: 8px solid #080808;
+	}
+	div.center,.spacer,.explanation_bg {
+		background-color: #080808;
+	}
+	.bar {
+		border-color: #000000;
+	}
+	p.question {
+		border: 8px solid #080808;
+		background-color: #000000;
+		color: #ffffff;
+	}
+	.text-wrapper {
+		color: #000000;
+	}
+	.small_button:hover,.small_button:focus {
+		background: #000000;
+	}
 }
-@media(prefers-color-scheme: dark){
-    body{
-        background-color: #222;
-        color: white;
-    }
-    #question {
-        background-color: #111;
-        color: white;
-    }
-}
-
-/*Github Corner*/
-.github-corner {
-    fill: #000;
-  }
-  .github-corner .octo-arm, .github-corner .octo-body {
-    fill: #fff;
-  }
-  
-  .github-corner:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-  
-  @keyframes octocat-wave {
-    0%, 100% {
-      transform: rotate(0);
-    }
-    20%, 60% {
-      transform: rotate(-25deg);
-    }
-    40%, 80% {
-      transform: rotate(10deg);
-    }
-  }
-  @media (max-width: 800px) {
-    .github-corner:hover .octo-arm {
-      animation: none;
-    }
-  
-    .github-corner .octo-arm {
-      animation: octocat-wave 560ms ease-in-out;
-    }
-  }
-  @media (prefers-color-scheme: dark) {
-    .github-corner {
-      fill: #fff;
-    }
-    .github-corner .octo-arm, .github-corner .octo-body {
-      fill: #000;
-    }
-  }
