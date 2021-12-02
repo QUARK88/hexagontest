@@ -1,0 +1,8 @@
+{
+	"fgColor": "#e0e0e0",
+	"bgColor": "#141414",
+	"valColor": "#000000",
+	"barThickness": 60,
+	"outlineThickness": 6,
+	"limit": 25
+}
